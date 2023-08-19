@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Programação - Bombeiro</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+      <div id="timer">
+      <h2>Tempo Restante</h2>
+      <span id="minutos">07</span>:<span id="segundos">00</span>
+    </div>
+    <div id="pessoassalvas">
+      <h2>Pessoas salvas: </h2>
+      <h3 id="numpessoas">00</h3>
+    </div>
+
+    
+  <div id="container">
+    <div class="telaGameOver" id="telaGameOver">
+      <div class="conteudoGameOver">
+        <h2 id="fimdejogo">Fim de Jogo</h2>
+        <p id="motivogameover">Infelizmente, o tempo acabou.</p>
+        <p>Como deseja prosseguir ?</p>
+        <button id="inicio-button">Menu Inicial</button>
+        <button id="restart-button">Recomeçar</button>
+      </div>
+    </div>
+    
+
+    <h1>Bombeiro ao Resgate</h1>
+    <div id="areaDeJogo">
+      <div id="predio"></div>
+    </div>
+    <div id="caixaDeFerramentas">
+      <div class="bloco" id="direita-bloco">Direita</div>
+      <div class="bloco" id="esquerda-bloco">Esquerda</div>
+      <div class="bloco" id="subir-bloco">Subir</div>
+      <div class="bloco" id="descer-bloco">Descer</div>
+      <div class="bloco" id="apagarFogo-bloco">ApagarFogo</div>
+      <div class="bloco" id="rescue-bloco">ResgatarPessoas</div>
+    </div>
+    <div id="areaDeProgramacao">
+      <h2>Área de Programação</h2>
+      <div id="program"></div>
+      <button id="executar-button">Executar</button>
+      <button id="resetar-button">Resetar</button>
+      <button id="voltar-button">Menu Inicial</button>
+    </div>
+  </div>
+
+  
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Programação - Bombeiro</title>
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="telaInicial">
+      <h1 class="titulocompleto" id="titulo">Bem-vindo(a) ao Jogo</h1>
+      <h2 class="titulocompleto" id="subtitulo">Bombeiro ao Resgate</h2>
+      <div class="containerbotoes">
+      <button class="button" id="iniciar-button">Iniciar</button>
+      <button class="button" id="instrucoes-button">Instruções</button>
+      </div>
+    </div>
+    <div class="telaDeInstrucoes">
+      <h2>Instruções</h2>
+      <section class="slider-wrapper">
+  <button class="slide-arrow" id="slide-arrow-prev">
+    &#8249;
+  </button>
+  <button class="slide-arrow" id="slide-arrow-next">
+    &#8250;
+  </button>
+  <ul class="slides-container" id="slides-container">
+    <li class="slide">
+      <img src="telaCompletaJogo.png" alt="Imagem 1">
+      <p class="paragrafoslides">Um prédio está em chamas e você precisa guiar o bombeiro para salvar as pessoas que estão no prédio. Com apenas 7 minutos, selecione uma sequência de comandos para movimentar o bombeiro.</p>
+    </li>
+    <li class="slide">
+      <img src="selecionarblocos.gif" alt="Imagem 2">
+      <p class="paragrafoslides">Para dar os comandos ao jogo, basta apenas selecionar o texto dos bloco desejados e arrastá-los para a área de programação. Após isso é só clicar em executar.</p>
+    </li>
+    <li class="slide">
+      <img src="apagarfogo.gif" alt="Imagem 3">
+      <p class="paragrafoslides">Para apagar o fogo, você deve usar o comando ApagarFogo antes do bombeiro entrar no apartamento e só então usar o comando para andar !</p>
+    </li>
+    <li class="slide">
+      <img src="resetarComandos.gif" alt="Imagem 4">
+      <p class="paragrafoslides">Você pode remover um comando da área de progrmação clicando nele, caso deseje remover todos, basta clicar em Resetar.</p>
+    </li>
+    <li class="slide">
+      <img src="resgatarPessoa.gif" alt="Imagem 5">
+      <p class="paragrafoslides">Para resgatar uma pessoa, basta fazer o bombeiro chegar até o apartamento dela e usar o comando ResgatarPessoas.</p>
+    </li>
+  </ul>
+</section>
+      <button class="button2 voltar-button">Voltar</button>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
