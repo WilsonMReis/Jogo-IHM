@@ -238,9 +238,11 @@ function executarProximoComando() {
       }, 1000);
     } else {
       executarComando(comando);
+      if(comando === 'Esquerda' || comando === 'Direita' || comando === 'Subir' || comando === 'Descer' || comando === 'ResgatarPessoas' ){
       if (!checandoPorFogo) {
         indexDoPrograma++;
         setTimeout(executarProximoComando, 1000);
+      }
       }
     }
   } else {
