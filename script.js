@@ -237,7 +237,7 @@ function executarProximoComando() {
         executarProximoComando();
       }, 1000);
     } else {
-      executarComando(comando);
+      executarComando(comando, indexDoPrograma);
       if(comando === 'Esquerda' || comando === 'Direita' || comando === 'Subir' || comando === 'Descer' || comando === 'ResgatarPessoas' ){
       if (!checandoPorFogo) {
         indexDoPrograma++;
@@ -250,7 +250,7 @@ function executarProximoComando() {
   }
 }
 
-function executarComando(comando) {
+function executarComando(comando, indexDoPrograma) {
   switch (comando) {
     case 'Direita':
       direita();
@@ -280,10 +280,11 @@ function executarComando(comando) {
       }
       break;
     default:
+      var comandoerrado = indexDoPrograma + 1;
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Parece que você inseriu um comando inválido.',
+        text: 'Parece que o comando ' + comandoerrado + ' é um comando inválido.',
         footer: 'Reveja os comandos e tente novamente !'
       })
   }
