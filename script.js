@@ -243,7 +243,7 @@ function executarProximoComando() {
         indexDoPrograma++;
         setTimeout(executarProximoComando, 1000);
       }
-      }
+      }else{programRunning = false;}
     }
   } else {
     programRunning = false;
